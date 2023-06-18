@@ -1,10 +1,17 @@
 import './LanguageButton.css';
 import { LOCALES } from '../../data/i18n';
 
+const handleClickToHiddeLangOptions = () => {
+  const ulElement = document.querySelector('.lang-selector ul');
+  ulElement.classList = 'lang-display-none';
+  document.removeEventListener('mouseup', handleClickToHiddeLangOptions);
+};
+
 const buttonClick = () => {
   const ulElement = document.querySelector('.lang-selector ul');
   if (ulElement.classList.contains('lang-display-none')) {
     ulElement.classList = 'lang-display';
+    document.addEventListener('mouseup', handleClickToHiddeLangOptions);
   } else {
     ulElement.classList = 'lang-display-none';
   }
