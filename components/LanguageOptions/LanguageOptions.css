@@ -1,0 +1,11 @@
+.lang-display-none {
+  display: none;
+}
+.lang-display {
+  display: block;
+}
+
+.lang-selector ul {
+  position: fixed;
+  background-color: red;
+}

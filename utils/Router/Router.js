@@ -1,6 +1,6 @@
 import { match } from 'path-to-regexp';
-import NotFound from '../pages/NotFound/NotFound';
-import ROUTES from '../data/data';
+import NotFound from '../../pages/NotFound/NotFound';
+import ROUTES from '../../data/routes';
 
 let queryParams = {};
 
