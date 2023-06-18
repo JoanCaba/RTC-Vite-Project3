@@ -1,18 +1,20 @@
-import home from '../pages/Home/Home';
+import Experience from '../pages/Experience/Experience';
+import Home from '../pages/Home/Home';
+import Projects from '../pages/Projects/Projects';
 
-export const ROUTES = [
+const ROUTES = [
   {
-    path: '/',
-    component: home
+    path: '/:lang(es|en|)',
+    component: Home
   },
   {
-    path: '/about',
-    component: home
+    path: '/:lang(es|en|)?/experience',
+    component: Experience
+  },
+  {
+    path: '/:lang(es|en|)?/projects',
+    component: Projects
   }
 ];
 
-export const loq = [
-  {
-    empty: 'file'
-  }
-];
+export default ROUTES;
