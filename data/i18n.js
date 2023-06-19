@@ -20,6 +20,6 @@ export const i18n = {
     title: 'Hola',
     home: 'Inicio',
     experience: 'Experiencia',
-    projects: 'Projects'
+    projects: 'Proyectos'
   }
 };
