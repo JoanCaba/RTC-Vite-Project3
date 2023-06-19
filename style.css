@@ -1,13 +1,15 @@
 :root {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
   --primary-color: #050f2b;
   --secondary-color: #c1cddc;
 
   --mid-color: #6debbb;
   --text-color: #e9fafce8;
   --background-color: #1b242f;
+
+  --box-shadow-inset: inset 0 0 300px -100px #6debbb69;
+
+  --background-gradient: linear-gradient(35deg, var(--background-color) 0%, var(--mid-color) 100%);
   /* colors extra #516EBC #153477 */
 }
 * {

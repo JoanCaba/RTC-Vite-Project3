@@ -1,27 +1,38 @@
 export const LOCALES = {
   en: {
     name: 'English',
-    image: '../public/United-Kingdom-Flag.48.png',
+    image: '/United-Kingdom-Flag.48.png',
     alt: 'United Kingdom flag'
   },
   es: {
     name: 'Castellano',
-    image: '../public/Spain-Flag.48.png',
+    image: '/Spain-Flag.48.png',
     alt: 'Bandera de España'
   }
 };
 
+const PERSONAL_DATA = {
+  name: 'Joan Cabañeros',
+  avatarImage: ''
+};
+
 export const i18n = {
   en: {
-    title: 'Hello',
     home: 'Home',
     experience: 'Experience',
-    projects: 'Projects'
+    projects: 'Projects',
+    title: 'Hello',
+    description: `<p>Hello, I'm <span class='home-name'>${PERSONAL_DATA.name}</span> full-stack web developer.</p>`,
+    image: PERSONAL_DATA.avatarImage,
+    alt: 'Joan profile photo'
   },
   es: {
-    title: 'Hola',
     home: 'Inicio',
     experience: 'Experiencia',
-    projects: 'Proyectos'
+    projects: 'Proyectos',
+    title: 'Hola',
+    description: `<p>Hola, soy <span class='home-name'>${PERSONAL_DATA.name}</span> desarrollador web full-stack.</p>`,
+    image: PERSONAL_DATA.avatarImage,
+    alt: 'Foto de Joan'
   }
 };

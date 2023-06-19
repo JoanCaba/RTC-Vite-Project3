@@ -3,11 +3,10 @@
   background-color: var(--background-color);
   border: 1px solid var(--mid-color);
   display: flex;
-  width: 120px;
-  height: 24px;
+  width: 52px;
+  height: 34px;
   align-items: center;
   padding: 2px 5px;
-  justify-content: space-evenly;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -20,5 +19,15 @@
 }
 
 .language-button > span {
-  color: var(--text-color);
+  display: none;
+}
+
+@media screen and (min-width: 728px) {
+  .language-button > span {
+    color: var(--text-color);
+    display: block;
+  }
+  .language-button {
+    width: 130px;
+  }
 }

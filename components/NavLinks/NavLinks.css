@@ -25,3 +25,6 @@
   width: 100%;
   left: 0;
 }
+@media screen and (min-width: 728px) {
+  /* TODO: remove text for something else for mobile????*/
+}

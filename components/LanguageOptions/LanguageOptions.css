@@ -7,8 +7,9 @@
 
 .lang-selector ul {
   position: absolute;
-  width: 120px;
+  width: 130px;
   margin-top: 5px;
+  right: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -33,4 +34,9 @@
 .language-link:hover {
   background-color: var(--mid-color);
   color: var(--background-color);
+}
+@media screen and (min-width: 728px) {
+  .lang-selector ul {
+    right: auto;
+  }
 }

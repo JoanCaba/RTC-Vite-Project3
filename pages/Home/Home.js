@@ -1,11 +1,14 @@
 import { i18n } from '../../data/i18n';
 import getLanguage from '../../utils/getLanguage';
+import './Home.css';
 
 const Home = () => {
-  const { title } = i18n[getLanguage()];
+  const { description, image, alt } = i18n[getLanguage()];
 
-  return `
-  <h1> HOME ${title} </h1>
+  return `<div class='home'>
+  <div class='home-text'>${description}</div>
+  <img src="${image}" alt="${alt}">
+  </div>
   `;
 };
 
