@@ -1,6 +1,5 @@
 /* eslint-disable no-param-reassign */
 import { LOCALES, i18n } from '../../data/i18n';
-import getLanguage from '../../utils/getLanguage';
 import { updateLanguageButton } from '../LanguageButton/LanguageButton';
 import Link from '../Link/Link';
 import './LanguageOptions.css';
@@ -8,7 +7,7 @@ import './LanguageOptions.css';
 const updateLinks = (e) => {
   e.preventDefault();
   const navLinks = document.querySelectorAll('.main-link');
-  const locale = getLanguage();
+  const locale = e.target.getAttribute('href').split('/')[1];
 
   navLinks.forEach((anchor) => {
     const anchorPathName = anchor.getAttribute('href').split('/').reverse()[0];
