@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import './LanguageButton.css';
 import { LOCALES } from '../../data/i18n';
 import getLanguage from '../../utils/getLanguage';
@@ -26,17 +27,18 @@ const buttonTemplate = (lang) => {
 };
 
 export const updateLanguageButton = (button, lang) => {
-  // eslint-disable-next-line no-param-reassign
+  button.ariaLabel = LOCALES[lang].label;
   button.innerHTML = buttonTemplate(lang);
 };
 
 const LanguageButton = () => {
+  const lang = getLanguage();
   const buttonElement = document.createElement('button');
-  buttonElement.ariaLabel = 'Language selector';
+  buttonElement.ariaLabel = LOCALES[lang].label;
   buttonElement.type = 'button';
   buttonElement.classList = 'language-button';
   buttonElement.addEventListener('click', buttonClick);
-  buttonElement.innerHTML = buttonTemplate(getLanguage());
+  buttonElement.innerHTML = buttonTemplate(lang);
 
   return buttonElement;
 };

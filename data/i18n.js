@@ -1,11 +1,13 @@
 export const LOCALES = {
   en: {
     name: 'English',
+    label: 'Language selector',
     image: '/United-Kingdom-Flag.48.png',
     alt: 'United Kingdom flag'
   },
   es: {
     name: 'Castellano',
+    label: 'Selector de idioma',
     image: '/Spain-Flag.48.png',
     alt: 'Bandera de España'
   }
