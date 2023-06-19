@@ -2,13 +2,19 @@
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: white;
-  background-color: #242424;
+  --primary-color: #050f2b;
+  --secondary-color: #c1cddc;
+
+  --mid-color: #6debbb;
+  --text-color: #e9fafce8;
+  --background-color: #1b242f;
+  /* colors extra #516EBC #153477 */
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--primary-color);
 }
 ul {
   list-style: none;

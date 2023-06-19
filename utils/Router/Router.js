@@ -25,7 +25,6 @@ const router = () => {
 };
 const onAnchorClicked = (e) => {
   const anchorPath = e.target.getAttribute('href');
-  // TODO: Add language selector from header componenet button? const language =
   const isMainClick = e.button === 0;
   const isModifiedClick = e.metaKey || e.altKey || e.ctrlKey || e.shiftKey;
   if (isMainClick && !isModifiedClick) {

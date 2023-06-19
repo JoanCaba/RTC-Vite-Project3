@@ -1,7 +1,9 @@
 header {
   height: 10vh;
-  background-color: black;
+  background-color: var(--background-color);
+  color: var(--text-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 4px solid var(--mid-color);
 }

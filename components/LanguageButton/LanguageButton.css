@@ -1,4 +1,11 @@
 .flag-image {
   height: 16px;
   /*object-fit: contain;*/
+  min-width: 50px;
+  background-color: var(--background-color);
+}
+.language-button {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: 1px solid var(--mid-color);
 }

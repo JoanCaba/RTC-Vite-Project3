@@ -1,4 +1,5 @@
-import { LOCALES } from '../../data/i18n';
+/* eslint-disable no-param-reassign */
+import { LOCALES, i18n } from '../../data/i18n';
 import { updateLanguageButton } from '../LanguageButton/LanguageButton';
 import Link from '../Link/Link';
 import './LanguageOptions.css';
@@ -9,9 +10,10 @@ const updateLinks = (e) => {
   const locale = e.target.getAttribute('href').split('/')[1];
 
   navLinks.forEach((anchor) => {
-    const path = `/${locale}/${anchor.getAttribute('href').split('/').reverse()[0]}`;
-    // eslint-disable-next-line no-param-reassign
+    const anchorPathName = anchor.getAttribute('href').split('/').reverse()[0];
+    const path = `/${locale}/${anchorPathName}`;
     anchor.href = path;
+    anchor.text = i18n[locale][anchorPathName || 'home'];
   });
 
   const languageButton = document.querySelector('.language-button');

@@ -1,5 +1,6 @@
 import './LanguageButton.css';
 import { LOCALES } from '../../data/i18n';
+import getLanguage from '../../utils/getLanguage';
 
 const handleClickToHiddeLangOptions = () => {
   const ulElement = document.querySelector('.lang-selector ul');
@@ -35,13 +36,7 @@ const LanguageButton = () => {
   buttonElement.type = 'button';
   buttonElement.classList = 'language-button';
   buttonElement.addEventListener('click', buttonClick);
-  const currentPath = window.location.pathname;
-
-  if (currentPath.split('/')[1] === 'es') {
-    buttonElement.innerHTML = buttonTemplate('es');
-  } else {
-    buttonElement.innerHTML = buttonTemplate('en');
-  }
+  buttonElement.innerHTML = buttonTemplate(getLanguage());
 
   return buttonElement;
 };

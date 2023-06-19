@@ -11,11 +11,15 @@ export const LOCALES = {
 
 export const i18n = {
   en: {
-    title: 'Hello'
+    title: 'Hello',
+    home: 'Home',
+    experience: 'Experience',
+    projects: 'Projects'
   },
   es: {
-    title: 'Hola'
+    title: 'Hola',
+    home: 'Inicio',
+    experience: 'Experiencia',
+    projects: 'Projects'
   }
 };
-
-export default i18n;

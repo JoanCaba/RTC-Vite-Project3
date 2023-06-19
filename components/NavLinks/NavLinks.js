@@ -1,4 +1,6 @@
+import { i18n } from '../../data/i18n';
 import NAVLINKS from '../../data/navlinks';
+import getLanguage from '../../utils/getLanguage';
 import Link from '../Link/Link';
 import './NavLinks.css';
 
@@ -19,7 +21,7 @@ const NavLinks = () => {
   navElement.id = 'nav-links';
   NAVLINKS.forEach((link) => {
     const liElement = document.createElement('li');
-    const anchorElement = Link(link.href, link.text, 'nav-link main-link');
+    const anchorElement = Link(link.href, i18n[getLanguage()][link.linkName], 'nav-link main-link');
     anchorElement.addEventListener('click', updateLanguageLinks);
     liElement.append(anchorElement);
     ulElement.append(liElement);

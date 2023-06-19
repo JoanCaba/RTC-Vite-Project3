@@ -1,7 +1,9 @@
+import getLanguage from '../utils/getLanguage';
+
 const NAVLINKS = [
-  { href: '/', text: 'Home' },
-  { href: '/en/experience', text: 'experience' },
-  { href: '/en/projects', text: 'projects' }
+  { href: '/', linkName: 'home' },
+  { href: `/${getLanguage()}/experience`, linkName: 'experience' },
+  { href: `/${getLanguage()}/projects`, linkName: 'projects' }
 ];
 
 export default NAVLINKS;
