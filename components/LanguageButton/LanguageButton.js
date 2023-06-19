@@ -20,7 +20,7 @@ const buttonClick = () => {
 
 const buttonTemplate = (lang) => {
   return `
-  <img class='flag-image' src="${LOCALES[lang].image}" alt="Bandera de España" />
+  <img class='flag-image' src="${LOCALES[lang].image}" alt="${LOCALES[lang].alt}" />
   <span class="">${LOCALES[lang].name}<span/>
   `;
 };

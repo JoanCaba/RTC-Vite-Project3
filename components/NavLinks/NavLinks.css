@@ -4,7 +4,24 @@
   justify-content: center;
   gap: 1rem;
 }
-#nav-links > ul > li > a {
+.main-link {
   color: var(--text-color);
   text-transform: uppercase;
+  position: relative;
+}
+
+.main-link:after {
+  bottom: -2px;
+  content: '';
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: var(--text-color);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.main-link:hover:after {
+  width: 100%;
+  left: 0;
 }

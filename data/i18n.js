@@ -1,11 +1,13 @@
 export const LOCALES = {
   en: {
     name: 'English',
-    image: '../public/United-Kingdom-Flag.svg'
+    image: '../public/United-Kingdom-Flag.48.png',
+    alt: 'United Kingdom flag'
   },
   es: {
     name: 'Castellano',
-    image: '../public/Spain-Flag.svg'
+    image: '../public/Spain-Flag.48.png',
+    alt: 'Bandera de España'
   }
 };
 
