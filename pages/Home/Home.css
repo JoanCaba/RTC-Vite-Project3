@@ -13,10 +13,11 @@
   color: var(--background-color);
   font-size: 2rem;
   font-weight: 700;
+  padding: 2rem;
 }
 .home-name {
   display: inline-block;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   color: transparent;
   background: rgb(5, 15, 43);
   background: var(--background-gradient);
@@ -30,6 +31,16 @@
     justify-content: center;
   }
   .home-text {
-    width: 500px;
+    width: 340px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 372px) and (max-width: 727px) {
+  .home {
+    justify-content: center;
+  }
+  .home-text {
+    width: 300px;
+    padding: 0;
   }
 }
