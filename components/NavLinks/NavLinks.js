@@ -4,7 +4,21 @@ import getLanguage from '../../utils/getLanguage';
 import InputToggle from '../InputToggle/InputToggle';
 import Link from '../Link/Link';
 import NavLabel from '../NavLabel/NavLabel';
+import hamburgerButton from '../hamburgerButton/hamburgerButton';
 import './NavLinks.css';
+
+export const updateNavLinksPage = (currentPage) => {
+  const allAnchorLinks = document.querySelectorAll('.nav-link');
+  console.log(currentPage);
+  console.log(allAnchorLinks);
+  allAnchorLinks.forEach((link) => {
+    if (link.classList.contains(currentPage)) {
+      link.classList.add('current-page-link');
+    } else {
+      link.classList.remove('current-page-link');
+    }
+  });
+};
 
 const updateLanguageLinks = (e) => {
   const languageAnchors = document.querySelectorAll('.language-link');
@@ -20,12 +34,16 @@ const updateLanguageLinks = (e) => {
 const NavLinks = () => {
   const navElement = document.createElement('nav');
   const ulElement = document.createElement('ul');
-  navElement.id = 'nav-links';
-  navElement.append(NavLabel());
-  navElement.append(InputToggle('menu'));
+  ulElement.id = 'nav-links';
+  ulElement.classList = 'display-none dropdown-item';
+  navElement.append(hamburgerButton('nav-links-button'));
   NAVLINKS.forEach((link) => {
     const liElement = document.createElement('li');
-    const anchorElement = Link(link.href, i18n[getLanguage()][link.linkName], 'nav-link main-link');
+    const anchorElement = Link(
+      link.href,
+      i18n[getLanguage()][link.linkName],
+      `nav-link main-link ${link.linkName}-link`
+    );
     anchorElement.addEventListener('click', updateLanguageLinks);
     liElement.append(anchorElement);
     ulElement.append(liElement);
