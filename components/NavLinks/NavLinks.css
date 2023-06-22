@@ -23,7 +23,7 @@
   justify-content: center;
 } */
 
-.main-link {
+.nav-link {
   color: var(--text-color);
   /* text-transform: uppercase; */
   position: relative;
@@ -34,7 +34,8 @@
   font-weight: 700;
 }
 
-.current-page-link {
+.current-page-link,
+.current-language-link {
   color: var(--mid-color);
 }
 @media screen and (min-width: 405px) {

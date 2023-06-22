@@ -1,9 +1,7 @@
 import { i18n } from '../../data/i18n';
 import NAVLINKS from '../../data/navlinks';
 import getLanguage from '../../utils/getLanguage';
-import InputToggle from '../InputToggle/InputToggle';
 import Link from '../Link/Link';
-import NavLabel from '../NavLabel/NavLabel';
 import hamburgerButton from '../hamburgerButton/hamburgerButton';
 import './NavLinks.css';
 
