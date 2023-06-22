@@ -9,8 +9,6 @@ import './NavLinks.css';
 
 export const updateNavLinksPage = (currentPage) => {
   const allAnchorLinks = document.querySelectorAll('.nav-link');
-  console.log(currentPage);
-  console.log(allAnchorLinks);
   allAnchorLinks.forEach((link) => {
     if (link.classList.contains(currentPage)) {
       link.classList.add('current-page-link');
