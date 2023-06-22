@@ -8,12 +8,10 @@ export const updateFooterLanguage = (lang) => {
   footerElement.innerHTML = footer;
 };
 
-const initFooter = () => {
+export const initFooter = () => {
   const app = document.querySelector('#app');
   const footerElement = document.createElement('footer');
   const lang = i18n[getLanguage()];
   app.append(footerElement);
   updateFooterLanguage(lang);
 };
-
-export default initFooter;

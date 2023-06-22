@@ -1,5 +1,5 @@
 header {
-  height: 10vh;
+  height: 10svh;
   min-height: 50px;
   background-color: var(--background-color);
   display: flex;
@@ -11,7 +11,7 @@ header {
 @media screen and (min-width: 728px) {
   header {
     padding: 0;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 5rem;
   }
 }

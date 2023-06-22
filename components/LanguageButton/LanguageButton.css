@@ -10,6 +10,7 @@
   padding: 2px 0px;
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .flag-image {
