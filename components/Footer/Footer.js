@@ -3,9 +3,9 @@ import getLanguage from '../../utils/getLanguage';
 import './Footer.css';
 
 export const updateFooterLanguage = (lang) => {
-  const { footer } = lang;
+  const { developedBy, using } = lang;
   const footerElement = document.querySelector('footer');
-  footerElement.innerHTML = footer;
+  footerElement.innerHTML = `${developedBy}${using}`;
 };
 
 export const initFooter = () => {
