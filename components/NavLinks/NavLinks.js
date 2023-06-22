@@ -1,31 +1,10 @@
 import { i18n } from '../../data/i18n';
 import NAVLINKS from '../../data/navlinks';
 import getLanguage from '../../utils/getLanguage';
+import { updateLanguageLinks } from '../../utils/updateLinks';
 import Link from '../Link/Link';
 import hamburgerButton from '../hamburgerButton/hamburgerButton';
 import './NavLinks.css';
-
-export const updateNavLinksPage = (currentPage) => {
-  const allAnchorLinks = document.querySelectorAll('.nav-link');
-  allAnchorLinks.forEach((link) => {
-    if (link.classList.contains(currentPage)) {
-      link.classList.add('current-page-link');
-    } else {
-      link.classList.remove('current-page-link');
-    }
-  });
-};
-
-const updateLanguageLinks = (e) => {
-  const languageAnchors = document.querySelectorAll('.language-link');
-  const currentPath = e.target.getAttribute('href');
-  languageAnchors.forEach((anchor) => {
-    const linkLocale = anchor.getAttribute('href').split('/')[1];
-    const path = `/${linkLocale}/${currentPath.split('/').reverse()[0]}`;
-    // eslint-disable-next-line no-param-reassign
-    anchor.href = path;
-  });
-};
 
 const NavLinks = () => {
   const navElement = document.createElement('nav');

@@ -6,4 +6,5 @@ footer {
   justify-content: space-around;
   align-items: center;
   border-top: 2px solid var(--mid-color);
+  color: var(--text-color);
 }

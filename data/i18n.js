@@ -25,6 +25,7 @@ export const i18n = {
     projects: 'Projects',
     title: 'Hello',
     description: `<p>Hello, I'm <span class='home-name'>${PERSONAL_DATA.name}</span> full-stack web developer.</p>`,
+    footer: `<p>{Developed by ${PERSONAL_DATA.name}}</p><p>With Vite & vanilla JavaScript</p>`,
     image: PERSONAL_DATA.avatarImage,
     alt: 'Joan profile photo'
   },
@@ -34,6 +35,7 @@ export const i18n = {
     projects: 'Proyectos',
     title: 'Hola',
     description: `<p>Hola, soy <span class='home-name'>${PERSONAL_DATA.name}</span> desarrollador web full-stack.</p>`,
+    footer: `<p>{Desarrollado por ${PERSONAL_DATA.name}}</p><p>Con Vite & vanilla JavaScript</p>`,
     image: PERSONAL_DATA.avatarImage,
     alt: 'Foto de Joan'
   }

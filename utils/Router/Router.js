@@ -1,24 +1,24 @@
 import { match } from 'path-to-regexp';
 import NotFound from '../../pages/NotFound/NotFound';
 import ROUTES from '../../data/routes';
-
-let queryParams = {};
+import { updateNavLinksPage } from '../updateLinks';
 
 const matchRouteParams = (path, currentPath) => {
   if (path === currentPath) return true;
   const matcherUrl = match(path, { decode: decodeURIComponent });
   const matched = matcherUrl(currentPath);
   if (!matched) return false;
-  queryParams = matched.params;
   return true;
 };
 
 const router = () => {
   const currentPath = window.location.pathname;
   // const { component } = ROUTES.find((route) => route.path === path) || {};
-  const { component } = ROUTES.find(({ path }) => matchRouteParams(path, currentPath)) || {};
+  const { component, linkClass } =
+    ROUTES.find(({ path }) => matchRouteParams(path, currentPath)) || {};
   if (component) {
-    document.querySelector('main').innerHTML = component(queryParams.lang);
+    updateNavLinksPage(linkClass);
+    document.querySelector('main').innerHTML = component();
   } else {
     document.querySelector('main').innerHTML = NotFound();
   }
