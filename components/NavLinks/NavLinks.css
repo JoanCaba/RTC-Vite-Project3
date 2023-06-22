@@ -33,8 +33,6 @@
   display: inline-block;
 }
 @media screen and (min-width: 405px) {
-  /* TODO: remove text for something else for mobile????*/
-
   .main-link {
     width: auto;
     height: auto;

@@ -16,13 +16,13 @@ const updateLinks = (e) => {
     anchor.text = i18n[locale][anchorPathName || 'home'];
   });
 
-  const languageButton = document.querySelector('.language-button');
+  const languageButton = document.querySelector('#language-button');
   updateLanguageButton(languageButton, locale);
 };
 
 const LanguageOptions = () => {
   const ulElement = document.createElement('ul');
-  ulElement.classList = 'lang-display-none';
+  ulElement.classList = 'display-none dropdown-item';
   const currentPath = window.location.pathname;
   Object.keys(LOCALES).forEach((locale) => {
     const { name } = LOCALES[locale];

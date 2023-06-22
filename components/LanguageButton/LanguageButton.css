@@ -1,4 +1,4 @@
-.language-button {
+#language-button {
   color: var(--text-color);
   background-color: var(--background-color);
   border: 1px solid var(--mid-color);
@@ -6,28 +6,31 @@
   width: 52px;
   height: 34px;
   align-items: center;
-  padding: 2px 5px;
+  justify-content: center;
+  padding: 2px 0px;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .flag-image {
-  height: 100%;
-  object-fit: contain;
-  width: 100%;
+  height: 24px;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 32px;
   background-color: var(--background-color);
 }
 
-.language-button > span {
+#language-button > span {
   display: none;
 }
 
 @media screen and (min-width: 728px) {
-  .language-button > span {
+  #language-button > span {
     color: var(--text-color);
     display: block;
   }
-  .language-button {
+  #language-button {
     width: 130px;
+    gap: 1rem;
   }
 }
