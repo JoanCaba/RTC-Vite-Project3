@@ -25,6 +25,14 @@
   position: relative;
 }
 
+.home-social-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 728px) {
   .home {
     flex-direction: row;
@@ -48,6 +56,9 @@
   .home-text > h1::before {
     top: 2px;
   }
+  .home-social-buttons {
+    justify-content: flex-start;
+  }
 }
 @media screen and (min-width: 372px) and (max-width: 727px) {
   .home {
@@ -70,5 +81,8 @@
   }
   .home-text > h1::before {
     top: 2px;
+  }
+  .home-social-buttons {
+    justify-content: flex-start;
   }
 }
