@@ -34,11 +34,6 @@ const Home = () => {
   homeContainer.append(homeDescriptionContainer);
   homeContainer.append(homeImageContainer);
   return homeContainer;
-  // return `<div class='home'>
-  // <div class='home-text'>${description}</div>
-  // <img src="${image}" alt="${alt}">
-  // </div>
-  // `;
 };
 
 export default Home;
