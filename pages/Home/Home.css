@@ -42,12 +42,13 @@
   .home-text {
     width: 500px;
     padding: 0;
-    line-height: 2.25;
+    line-height: 2;
   }
+  /*   
   .home-text > h1:after,
   .home-text > h1::before {
-    bottom: 2px;
-    content: '______________';
+    bottom: 1px;
+    content: '- - - - - - - - - - - -';
     height: 4px;
     left: 0;
     position: absolute;
@@ -57,21 +58,23 @@
   }
   .home-text > h1::before {
     top: 2px;
-  }
+  } */
   .home-social-buttons {
     justify-content: flex-start;
   }
 }
 @media screen and (min-width: 372px) and (max-width: 727px) {
   .home {
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
   }
   .home-text {
     width: 300px;
     padding: 0;
     line-height: 1.7;
   }
-  .home-text > h1:after,
+  /* .home-text > h1:after,
   .home-text > h1::before {
     bottom: 2px;
     content: '______________';
@@ -84,7 +87,7 @@
   }
   .home-text > h1::before {
     top: 2px;
-  }
+  } */
   .home-social-buttons {
     justify-content: flex-start;
   }
