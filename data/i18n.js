@@ -23,22 +23,24 @@ export const i18n = {
     home: 'Home',
     experience: 'Experience',
     projects: 'Projects',
-    title: 'Hello',
-    description: `<p>Hello, I'm <span class='home-name'>${PERSONAL_DATA.name}</span> full-stack web developer.</p>`,
-    developedBy: `<p>{Developed by ${PERSONAL_DATA.name}}</p>`,
-    using: `</p><p>With Vite & vanilla JavaScript</p>`,
-    image: PERSONAL_DATA.avatarImage,
-    alt: 'Joan profile photo'
+    hello: `Hello, I'm`,
+    myName: PERSONAL_DATA.name,
+    developedBy: 'Developed by',
+    professionTitle: 'Full-Stack Web Developer',
+    usingFooter: 'With Vite & vanilla JavaScript',
+    avatarImage: PERSONAL_DATA.avatarImage,
+    avatarImageAlt: 'Joan profile photo'
   },
   es: {
     home: 'Inicio',
     experience: 'Experiencia',
     projects: 'Proyectos',
-    title: 'Hola',
-    description: `<p>Hola, soy <span class='home-name'>${PERSONAL_DATA.name}</span> desarrollador web full-stack.</p>`,
-    developedBy: `<p>{Desarrollado por ${PERSONAL_DATA.name}}</p>`,
-    using: `<p>Con Vite & vanilla JavaScript</p>`,
-    image: PERSONAL_DATA.avatarImage,
-    alt: 'Foto de Joan'
+    hello: `Hola, soy`,
+    myName: PERSONAL_DATA.name,
+    developedBy: 'Desarrollado por',
+    professionTitle: 'Desarrollador Web Full-Stack',
+    usingFooter: 'Con Vite & vanilla JavaScript',
+    avatarImage: PERSONAL_DATA.avatarImage,
+    avatarImageAlt: 'Foto de perfil de Joan'
   }
 };
