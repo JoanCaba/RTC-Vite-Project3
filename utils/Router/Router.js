@@ -13,14 +13,15 @@ const matchRouteParams = (path, currentPath) => {
 
 const router = () => {
   const currentPath = window.location.pathname;
+  const mainElement = document.querySelector('main');
   // const { component } = ROUTES.find((route) => route.path === path) || {};
   const { component, linkClass } =
     ROUTES.find(({ path }) => matchRouteParams(path, currentPath)) || {};
   if (component) {
     updateNavLinksPage(linkClass);
-    document.querySelector('main').innerHTML = component();
+    mainElement.replaceChildren(component());
   } else {
-    document.querySelector('main').innerHTML = NotFound();
+    mainElement.replaceChildren(NotFound());
   }
 };
 const onAnchorClicked = (e) => {

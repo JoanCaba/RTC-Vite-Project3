@@ -14,7 +14,7 @@
   font-weight: 700;
   padding: 2rem;
 }
-.home-name {
+.home-text > h1 {
   display: block;
   font-size: 2.3rem;
   color: transparent;
@@ -34,8 +34,8 @@
     width: 500px;
     padding: 0;
   }
-  .home-name:after,
-  .home-name::before {
+  .home-text > h1:after,
+  .home-text > h1::before {
     bottom: 2px;
     content: '______________';
     height: 4px;
@@ -45,7 +45,7 @@
     background: var(--background-gradient);
     width: auto;
   }
-  .home-name::before {
+  .home-text > h1::before {
     top: 2px;
   }
 }
@@ -57,8 +57,8 @@
     width: 300px;
     padding: 0;
   }
-  .home-name:after,
-  .home-name::before {
+  .home-text > h1:after,
+  .home-text > h1::before {
     bottom: 2px;
     content: '______________';
     height: 4px;
@@ -68,7 +68,7 @@
     background: var(--background-gradient);
     width: auto;
   }
-  .home-name::before {
+  .home-text > h1::before {
     top: 2px;
   }
 }
