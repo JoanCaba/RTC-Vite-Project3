@@ -16,6 +16,7 @@
 }
 .home-text > h1 {
   display: block;
+  line-height: 1.4;
   font-size: 2.3rem;
   color: transparent;
   background: rgb(5, 15, 43);
@@ -41,6 +42,7 @@
   .home-text {
     width: 500px;
     padding: 0;
+    line-height: 2.25;
   }
   .home-text > h1:after,
   .home-text > h1::before {
@@ -67,6 +69,7 @@
   .home-text {
     width: 300px;
     padding: 0;
+    line-height: 1.7;
   }
   .home-text > h1:after,
   .home-text > h1::before {

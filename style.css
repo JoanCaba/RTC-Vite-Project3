@@ -19,6 +19,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  box-shadow: var(--box-shadow-inset);
+}
 ul {
   list-style: none;
 }
@@ -31,6 +34,12 @@ a {
 }
 .display-flex {
   display: flex;
+}
+
+#app {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* button {
