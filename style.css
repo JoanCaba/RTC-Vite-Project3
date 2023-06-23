@@ -7,7 +7,8 @@
   --mid-color: #00c36f;
   --text-color: #e9fafce8;
   --background-color: #1b242f;
-
+  --linkedin-color: #008cc9;
+  --github-color: #606a86;
   --box-shadow-inset: inset 0 0 300px -100px #6debbb69;
 
   --background-gradient: linear-gradient(35deg, var(--background-color) 0%, var(--mid-color) 100%);

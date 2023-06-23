@@ -2,14 +2,16 @@ const MEDIA = {
   linkedin: {
     mediaName: 'linkedin',
     url: 'https://www.linkedin.com/in/joan-caba',
-    icon: 'ha',
-    text: 'ha'
+    icon: './linkedin.svg',
+    imageAlt: 'linkedin logo',
+    text: 'LinkedIn'
   },
   github: {
     mediaName: 'github',
     url: 'https://github.com/JoanCaba',
-    icon: 'ha',
-    text: 'ha'
+    icon: './github.svg',
+    imageAlt: 'github logo',
+    text: 'GitHub'
   }
 };
 
