@@ -1,7 +1,9 @@
 import './InfoButton.css';
 
-const InfoButton = (cardElement, groupClass, defaultCard) => {
+const InfoButton = (text, shortText, cardElement, groupClass, defaultCard) => {
   const buttonElement = document.createElement('button');
+  const spanTextElement = document.createElement('span');
+  const spanShortTextElement = document.createElement('span');
   buttonElement.classList = `info-card-button ${groupClass}`;
   if (defaultCard) buttonElement.classList.add('active-card-button');
   buttonElement.addEventListener('click', function f(event) {
@@ -21,6 +23,10 @@ const InfoButton = (cardElement, groupClass, defaultCard) => {
 
     // }
   });
+  spanTextElement.innerText = text;
+  spanShortTextElement.innerText = shortText;
+  buttonElement.append(spanTextElement);
+  buttonElement.append(spanShortTextElement);
   return buttonElement;
 };
 

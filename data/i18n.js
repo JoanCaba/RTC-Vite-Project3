@@ -1,3 +1,5 @@
+import EXPERIENCE from './experience';
+
 export const LOCALES = {
   en: {
     name: 'English',
@@ -12,7 +14,6 @@ export const LOCALES = {
     alt: 'Bandera de España'
   }
 };
-
 const PERSONAL_DATA = {
   name: 'Joan Cabañeros',
   avatarImage: ''
@@ -29,7 +30,9 @@ export const i18n = {
     professionTitle: 'Full-Stack Web Developer',
     usingFooter: 'With Vite & vanilla JavaScript',
     avatarImage: PERSONAL_DATA.avatarImage,
-    avatarImageAlt: 'Joan profile photo'
+    avatarImageAlt: 'Joan profile photo',
+    experienceTitle: `Where I've Worked`,
+    experiencesList: EXPERIENCE.en
   },
   es: {
     home: 'Inicio',
@@ -41,6 +44,8 @@ export const i18n = {
     professionTitle: 'Desarrollador Web Full-Stack',
     usingFooter: 'Con Vite & vanilla JavaScript',
     avatarImage: PERSONAL_DATA.avatarImage,
-    avatarImageAlt: 'Foto de perfil de Joan'
+    avatarImageAlt: 'Foto de perfil de Joan',
+    experienceTitle: `Donde he trabajado`,
+    experiencesList: EXPERIENCE.es
   }
 };
