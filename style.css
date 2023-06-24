@@ -8,6 +8,7 @@
   --mid-color: #00c36f;
   --text-color: #e9fafce8;
   --background-color: #1b242f;
+  --background-color-opacity: #1b242fdc;
   --linkedin-color: #008cc9;
   --github-color: #606a86;
   --box-shadow-inset: inset 0 0 300px -100px #6debbb69;
@@ -19,6 +20,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.3;
 }
 body {
   box-shadow: var(--box-shadow-inset);

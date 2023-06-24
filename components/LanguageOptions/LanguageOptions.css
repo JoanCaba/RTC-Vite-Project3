@@ -17,6 +17,7 @@
   border: 1px solid var(--mid-color);
   border-radius: 10px;
   overflow: hidden;
+  z-index: 10;
 }
 .lang-selector ul li {
   width: 100%;
