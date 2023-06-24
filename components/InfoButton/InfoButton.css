@@ -1,10 +1,10 @@
 .info-card-button {
   width: 60px;
   height: 40px;
-  background: var(--background-color-opacity);
+  background: transparent;
   color: var(--text-color);
   font-weight: 700;
-  border-style: inset;
+  border-style: none;
 }
 .info-card-button span:nth-child(1) {
   display: none;
@@ -14,13 +14,14 @@
 }
 .active-card-button {
   color: var(--mid-color);
-  background: transparent;
-  border: none;
+  background: var(--background-color-opacity);
   font-weight: 900;
   font-size: 15px;
-  border-width: 1px;
+  border: 1px solid var(--mid-color);
   border-bottom: 0;
-  border-style: outset;
+  border-top: 2px;
+  border-right: 1px;
+  border-style: solid;
 }
 
 @media screen and (min-width: 405px) {
@@ -38,8 +39,10 @@
   }
   .active-card-button {
     text-align: right;
+    border: 1px solid var(--mid-color);
+    border-left: 2px;
     border-right: 0;
-    border-top: 0;
+    border-style: solid;
   }
   .active-card-button::after {
     content: ' >';

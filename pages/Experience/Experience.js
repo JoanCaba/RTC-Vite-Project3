@@ -16,6 +16,7 @@ const Experience = () => {
   experienceContainer.classList = 'experience';
   experienceSection.classList = 'experience-section';
   buttonsContainer.classList = 'experience-buttons';
+  experienceCardContainer.classList = 'experience-cards';
   const experiences = Object.keys(experiencesList);
   experiences.forEach((experience) => {
     const {
