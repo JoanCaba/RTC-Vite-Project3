@@ -1,20 +1,17 @@
 import MEDIA from '../../data/mediaLinks';
+import Link from '../Link/Link';
 import './SocialButton.css';
 
 const SocialButton = (media) => {
   const { mediaName, url, text, icon, imageAlt } = MEDIA[media];
-  const buttonElement = document.createElement('a');
+  const linkElement = Link(url, text, `media-button ${mediaName}-button`);
   const buttonImage = document.createElement('img');
-  buttonElement.classList = `media-button ${mediaName}-button`;
-  buttonElement.href = url;
-  buttonElement.rel = 'noreferrer';
-  buttonElement.role = 'button';
+  linkElement.rel = 'noreferrer';
+  linkElement.role = 'button';
   buttonImage.src = icon;
   buttonImage.alt = imageAlt;
-  buttonElement.append(buttonImage);
-
-  buttonElement.append(text);
-  return buttonElement;
+  linkElement.insertBefore(buttonImage, linkElement.firstChild);
+  return linkElement;
 };
 
 export default SocialButton;
