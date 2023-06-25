@@ -12,12 +12,33 @@
   line-height: 1.2;
   font-weight: 600;
   border-radius: 10px;
-  border: 1px solid;
-  border-color: currentColor;
+  border: 2px solid currentColor;
+  border-style: outset;
   width: 120px;
   height: 40px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .media-button > img {
   /* height: 24px; */
   width: 24px;
+}
+
+.media-button:hover {
+  border: 3px solid;
+  color: var(--text-color);
+}
+.linkedin-button:hover {
+  background: var(--linkedin-color);
+}
+
+.linkedin-button:hover img {
+  content: url('/linkedin-hover.svg');
+}
+
+.github-button:hover {
+  background: var(--github-color);
+}
+.github-button:hover img {
+  content: url('/github-hover.svg');
 }
