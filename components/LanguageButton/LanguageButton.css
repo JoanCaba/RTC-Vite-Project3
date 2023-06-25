@@ -11,6 +11,8 @@
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+  color: var(--text-color);
+  font-weight: 700;
 }
 
 .flag-image {
@@ -20,14 +22,18 @@
   width: 32px;
   background-color: var(--background-color);
 }
-
+#language-button:hover,
+#language-button.dropdown-focus {
+  background: var(--mid-color);
+  color: var(--background-color);
+  border: 1px solid var(--text-color);
+}
 #language-button > span {
   display: none;
 }
 
 @media screen and (min-width: 728px) {
   #language-button > span {
-    color: var(--text-color);
     display: block;
   }
   #language-button {

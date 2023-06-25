@@ -36,9 +36,11 @@
   font-weight: 700;
 }
 
-.current-page-link,
-.current-language-link {
+.current-page-link {
   color: var(--mid-color);
+}
+.current-language-link {
+  display: none;
 }
 @media screen and (min-width: 405px) {
   #nav-links-button {
