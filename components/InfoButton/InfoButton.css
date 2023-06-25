@@ -14,14 +14,16 @@
 }
 .active-card-button {
   color: var(--mid-color);
-  background: var(--background-color-opacity);
+  background: var(--background-color);
   font-weight: 900;
   font-size: 15px;
   border: 1px solid var(--mid-color);
-  border-bottom: 0;
-  border-top: 2px;
-  border-right: 1px;
+  border-bottom-width: 0;
+  border-left-width: 3px;
+  border-top-width: 3px;
   border-style: solid;
+  position: relative;
+  top: 3px;
 }
 
 @media screen and (min-width: 405px) {
@@ -39,10 +41,11 @@
   }
   .active-card-button {
     text-align: right;
-    border: 1px solid var(--mid-color);
-    border-left: 2px;
-    border-right: 0;
-    border-style: solid;
+    border-bottom-width: 1px;
+    border-left-width: 3px;
+    border-right-width: 0;
+    left: 3px;
+    top: 0;
   }
   .active-card-button::after {
     content: ' >';
