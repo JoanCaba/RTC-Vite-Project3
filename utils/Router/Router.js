@@ -19,9 +19,19 @@ const router = () => {
     ROUTES.find(({ path }) => matchRouteParams(path, currentPath)) || {};
   if (component) {
     updateNavLinksPage(linkClass);
-    mainElement.replaceChildren(component());
+    if (mainElement.children.length > 0) {
+      const childrens = [...mainElement.children];
+      childrens.forEach((child) => {
+        child.classList.add('fade-out');
+        child.classList.remove('fade-in');
+        child.addEventListener('animationend', () => {
+          child.remove();
+        });
+      });
+    }
+    mainElement.appendChild(component());
   } else {
-    mainElement.replaceChildren(NotFound());
+    mainElement.appendChild(NotFound());
   }
 };
 const onAnchorClicked = (e) => {

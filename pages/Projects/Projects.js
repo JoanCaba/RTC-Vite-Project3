@@ -1,5 +1,14 @@
+import getLanguage from '../../utils/getLanguage';
+
 const Projects = () => {
-  return '<h1> TEST </h1>';
+  //const { hello, myName, professionTitle } = i18n[getLanguage()];
+  const projectsContainer = document.createElement('section');
+  projectsContainer.id = 'projects';
+  projectsContainer.classList.remove('fade-out');
+  projectsContainer.classList.add('fade-in');
+
+  projectsContainer.append(divCont);
+  return projectsContainer;
 };
 
 export default Projects;

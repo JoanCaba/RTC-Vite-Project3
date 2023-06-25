@@ -1,3 +1,29 @@
 main {
   height: 80svh;
 }
+
+.fade-out {
+  animation: 0.5s ease-out 0s 1 slideOut;
+  position: absolute;
+  align-items: center;
+}
+.fade-in {
+  animation: 0.5s ease-out 0s 1 slideIn;
+}
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

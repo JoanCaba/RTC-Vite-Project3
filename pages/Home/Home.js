@@ -27,10 +27,12 @@ const createHomeDescription = (hello, myName, professionTitle) => {
 
 const Home = () => {
   const { hello, myName, professionTitle } = i18n[getLanguage()];
-  const homeContainer = document.createElement('div');
+  const homeContainer = document.createElement('section');
   const homeImageContainer = document.createElement('div');
   const homeDescriptionContainer = createHomeDescription(hello, myName, professionTitle);
-  homeContainer.classList = 'home';
+  homeContainer.id = 'home';
+  homeContainer.classList.remove('fade-out');
+  homeContainer.classList.add('fade-in');
   homeContainer.append(homeDescriptionContainer);
   homeContainer.append(homeImageContainer);
   return homeContainer;

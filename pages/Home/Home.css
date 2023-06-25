@@ -1,4 +1,4 @@
-.home {
+#home {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +8,6 @@
 }
 .home-text {
   line-height: 1.3;
-  /* width: 95vw; */
   color: var(--background-color);
   font-size: 2rem;
   font-weight: 700;
@@ -35,7 +34,7 @@
 }
 
 @media screen and (min-width: 728px) {
-  .home {
+  #home {
     flex-direction: row;
     justify-content: space-evenly;
   }
@@ -44,27 +43,12 @@
     padding: 0;
     line-height: 2;
   }
-  /*   
-  .home-text > h1:after,
-  .home-text > h1::before {
-    bottom: 1px;
-    content: '- - - - - - - - - - - -';
-    height: 4px;
-    left: 0;
-    position: absolute;
-    border-radius: 10px;
-    background: var(--background-gradient);
-    width: auto;
-  }
-  .home-text > h1::before {
-    top: 2px;
-  } */
   .home-social-buttons {
     justify-content: flex-start;
   }
 }
 @media screen and (min-width: 372px) and (max-width: 727px) {
-  .home {
+  #home {
     flex-direction: row;
     justify-content: space-between;
     padding: 2rem;
@@ -74,20 +58,6 @@
     padding: 0;
     line-height: 1.7;
   }
-  /* .home-text > h1:after,
-  .home-text > h1::before {
-    bottom: 2px;
-    content: '______________';
-    height: 4px;
-    left: 0;
-    position: absolute;
-    border-radius: 10px;
-    background: var(--background-gradient);
-    width: auto;
-  }
-  .home-text > h1::before {
-    top: 2px;
-  } */
   .home-social-buttons {
     justify-content: flex-start;
   }

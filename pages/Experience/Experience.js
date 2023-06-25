@@ -6,14 +6,16 @@ import './Experience.css';
 
 const Experience = () => {
   const { experienceTitle, experiencesList } = i18n[getLanguage()];
-  const experienceContainer = document.createElement('div');
+  const experienceContainer = document.createElement('section');
   const innerExperienceContainer = document.createElement('div');
   const experienceTitleElement = document.createElement('h2');
   const experienceSection = document.createElement('section');
   const buttonsContainer = document.createElement('div');
   const experienceCardContainer = document.createElement('div');
   experienceTitleElement.innerHTML = experienceTitle;
-  experienceContainer.classList = 'experience';
+  experienceContainer.id = 'experience';
+  experienceContainer.classList.remove('fade-out');
+  experienceContainer.classList.add('fade-in');
   experienceSection.classList = 'experience-section';
   buttonsContainer.classList = 'experience-buttons';
   experienceCardContainer.classList = 'experience-cards';
