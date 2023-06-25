@@ -7,7 +7,7 @@ const Projects = () => {
   projectsContainer.classList.remove('fade-out');
   projectsContainer.classList.add('fade-in');
 
-  projectsContainer.append(divCont);
+  projectsContainer.innerHTML = `<h2>HELLO</h2>`;
   return projectsContainer;
 };
 

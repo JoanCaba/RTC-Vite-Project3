@@ -21,7 +21,6 @@ export const updateNavLinksPage = (currentPage) => {
 };
 
 export const onNavLinkClicked = (e) => {
-  if (e.target.classList.contains('current-page-link')) console.log('YEAH');
   const languageAnchors = document.querySelectorAll('.language-link');
   const currentPath = e.target.getAttribute('href');
   languageAnchors.forEach((anchor) => {
