@@ -14,9 +14,12 @@ const matchRouteParams = (path, currentPath) => {
 const router = () => {
   const currentPath = window.location.pathname;
   const mainElement = document.querySelector('main');
-  // const { component } = ROUTES.find((route) => route.path === path) || {};
   const { component, linkClass } =
     ROUTES.find(({ path }) => matchRouteParams(path, currentPath)) || {};
+
+  const previousLink = document.querySelector(`.current-page-link`);
+  const nextLink = document.querySelector(`.${linkClass}`);
+  if (previousLink === nextLink) return;
   if (component) {
     updateNavLinksPage(linkClass);
     if (mainElement.children.length > 0) {

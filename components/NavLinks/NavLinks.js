@@ -1,7 +1,7 @@
 import { i18n } from '../../data/i18n';
 import NAVLINKS from '../../data/navlinks';
 import getLanguage from '../../utils/getLanguage';
-import { updateLanguageLinks } from '../../utils/updateLinks';
+import { onNavLinkClicked } from '../../utils/updateLinks';
 import Link from '../Link/Link';
 import hamburgerButton from '../hamburgerButton/hamburgerButton';
 import './NavLinks.css';
@@ -19,7 +19,7 @@ const NavLinks = () => {
       i18n[getLanguage()][link.linkName],
       `nav-link main-link ${link.linkName}-link`
     );
-    anchorElement.addEventListener('click', updateLanguageLinks);
+    anchorElement.addEventListener('click', onNavLinkClicked);
     liElement.append(anchorElement);
     ulElement.append(liElement);
   });
