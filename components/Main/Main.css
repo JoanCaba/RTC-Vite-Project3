@@ -5,7 +5,8 @@ main {
 .fade-out {
   animation: 0.5s ease-out 0s 1 slideOut;
   position: absolute;
-  align-items: center;
+  width: 90svw !important;
+  height: 80svh !important;
 }
 .fade-in {
   animation: 0.5s ease-out 0s 1 slideIn;
