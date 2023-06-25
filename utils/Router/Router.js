@@ -16,10 +16,10 @@ const router = () => {
   const mainElement = document.querySelector('main');
   const { component, linkClass } =
     ROUTES.find(({ path }) => matchRouteParams(path, currentPath)) || {};
-
   const previousLink = document.querySelector(`.current-page-link`);
+  const languageLink = document.querySelector('current-language-link');
   const nextLink = document.querySelector(`.${linkClass}`);
-  if (previousLink === nextLink) return;
+  if (previousLink === nextLink && languageLink === nextLink) return;
   if (component) {
     updateNavLinksPage(linkClass);
     if (mainElement.children.length > 0) {
