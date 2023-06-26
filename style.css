@@ -25,6 +25,7 @@
 }
 body {
   box-shadow: var(--box-shadow-inset);
+  overflow: hidden;
 }
 ul {
   list-style: none;

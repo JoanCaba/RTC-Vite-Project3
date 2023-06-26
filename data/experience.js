@@ -1,7 +1,7 @@
 const EXPERIENCE = {
   en: {
     floraqueen: {
-      company: 'FloraQueen',
+      company: 'floraQueen',
       companyShort: 'FQ',
       title: 'IT support',
       startDate: 2001,
@@ -12,7 +12,7 @@ const EXPERIENCE = {
       defaultCard: false
     },
     econocom: {
-      company: 'Econocom',
+      company: 'econocom',
       companyShort: 'EC',
       title: 'IT supervisor',
       startDate: 2001,
@@ -25,7 +25,7 @@ const EXPERIENCE = {
   },
   es: {
     floraqueen: {
-      company: 'FloraQueen',
+      company: 'floraQueen',
       companyShort: 'FQ',
       title: 'IT soporte',
       startDate: 2001,
@@ -36,7 +36,7 @@ const EXPERIENCE = {
       defaultCard: false
     },
     econocom: {
-      company: 'Econocom',
+      company: 'econocom',
       companyShort: 'EC',
       title: 'IT coordinador',
       startDate: 2001,

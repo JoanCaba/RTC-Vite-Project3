@@ -1,0 +1,35 @@
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100svw;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.cards-button {
+  display: flex;
+  flex-direction: row;
+  background: var(--background-color-opacity);
+  padding: 5px 5px 0 5px;
+}
+.cards-container {
+  background: var(--background-color-opacity);
+  padding: 0 5px 5px 5px;
+  height: 50svh;
+}
+@media screen and (min-width: 405px) {
+  .cards-section {
+    flex-direction: row;
+    height: auto;
+    width: auto;
+  }
+  .cards-button {
+    flex-direction: column;
+    padding: 5px 0 5px 5px;
+  }
+  .cards-container {
+    padding: 5px 5px 5px 0;
+  }
+}

@@ -18,46 +18,13 @@
   font-size: 28px;
   text-decoration: underline;
 }
-.experience-section {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100svw;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-.experience-buttons {
-  display: flex;
-  flex-direction: row;
-  background: var(--background-color-opacity);
-  padding: 5px 5px 0 5px;
-}
-.experience-cards {
-  background: var(--background-color-opacity);
-  padding: 0 5px 5px 5px;
-  height: 50svh;
-}
 
 @media screen and (min-width: 405px) {
   #experience {
     justify-content: center;
   }
-  .experience-section {
-    flex-direction: row;
-    height: auto;
-    width: auto;
-  }
-  .experience-buttons {
-    flex-direction: column;
-    padding: 5px 0 5px 5px;
-  }
   #experience h2 {
     font-weight: 700;
     font-size: 32px;
-  }
-  .experience-cards {
-    padding: 5px 5px 5px 0;
   }
 }
