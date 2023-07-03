@@ -8,6 +8,8 @@ const experienceToCard = (experience) => {
   const {
     company,
     companyShort,
+    companyIcon,
+    companyIconAlt,
     title,
     startDate,
     endDate,
@@ -27,6 +29,8 @@ const experienceToCard = (experience) => {
     newCard.classCard = 'experience-card';
     newCard.cardId = company;
     newCard.defaultCard = defaultCard;
+    newCard.imageUrl = companyIcon;
+    newCard.imageAlt = companyIconAlt;
     return newCard;
   }
   return false;
@@ -41,6 +45,7 @@ const Experience = () => {
   experienceContainer.id = 'experience';
   experienceContainer.classList.remove('fade-out');
   experienceContainer.classList.add('fade-in');
+  // TODO: Refactor as array
   const experiences = Object.keys(experiencesList);
   const cardsToDisplay = experiences.filter((exp) => experiencesList[exp].showCard === true);
   const cardsArray = cardsToDisplay.map((card) => experienceToCard(experiencesList[card]));

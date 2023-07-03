@@ -1,4 +1,5 @@
 import EXPERIENCE from './experience';
+import PROJECTS from './projects';
 
 export const LOCALES = {
   en: {
@@ -32,7 +33,9 @@ export const i18n = {
     avatarImage: PERSONAL_DATA.avatarImage,
     avatarImageAlt: 'Joan profile photo',
     experienceTitle: `Where I've Worked`,
-    experiencesList: EXPERIENCE.en
+    experiencesList: EXPERIENCE.en,
+    projectsTitle: 'Projects that I’ve Built',
+    projectsList: PROJECTS.en
   },
   es: {
     home: 'Inicio',
@@ -46,6 +49,8 @@ export const i18n = {
     avatarImage: PERSONAL_DATA.avatarImage,
     avatarImageAlt: 'Foto de perfil de Joan',
     experienceTitle: `Donde he trabajado`,
-    experiencesList: EXPERIENCE.es
+    experiencesList: EXPERIENCE.es,
+    projectsTitle: 'Proyectos que he construido',
+    projectsList: PROJECTS.es
   }
 };

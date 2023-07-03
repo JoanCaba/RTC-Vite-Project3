@@ -3,7 +3,6 @@ import InfoCard from '../InfoCard/InfoCard';
 import './CardContainer.css';
 
 const CardContainer = (cardsArray) => {
-  // [{card1}, {card2}]
   const cardSection = document.createElement('section');
   const cardsContainer = document.createElement('div');
   const buttonsContainer = document.createElement('div');
@@ -19,7 +18,9 @@ const CardContainer = (cardsArray) => {
       description,
       subDescription,
       classCard,
-      defaultCard
+      defaultCard,
+      imageUrl,
+      imageAlt
     } = card;
     const newCard = InfoCard(
       cardName,
@@ -28,7 +29,9 @@ const CardContainer = (cardsArray) => {
       title,
       subTitle,
       description,
-      subDescription
+      subDescription,
+      imageUrl,
+      imageAlt
     );
     cardsContainer.append(newCard);
     buttonsContainer.append(InfoButton(cardName, cardNameShort, newCard, classCard, defaultCard));

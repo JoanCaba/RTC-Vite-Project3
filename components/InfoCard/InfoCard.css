@@ -30,6 +30,11 @@
   opacity: 0.7;
 }
 
+.card-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 @media screen and (min-width: 405px) {
   .card-container {
     width: 50svw;
@@ -37,5 +42,10 @@
     border-radius: 0 10px 10px 0;
     border-left-width: 3px;
     border-top-width: 3px;
+  }
+  .card-inner-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
   }
 }

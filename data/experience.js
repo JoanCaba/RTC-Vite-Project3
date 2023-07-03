@@ -3,6 +3,8 @@ const EXPERIENCE = {
     floraqueen: {
       company: 'floraQueen',
       companyShort: 'FQ',
+      companyIcon: 'TEST1',
+      companyIconAlt: 'FloraTest',
       title: 'IT support',
       startDate: 2001,
       endDate: 2020,
