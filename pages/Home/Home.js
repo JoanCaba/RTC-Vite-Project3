@@ -1,8 +1,8 @@
-import SocialButton from '../../components/SocialButton/SocialButton';
 import { i18n } from '../../data/i18n';
-import MEDIA from '../../data/mediaLinks';
+import MEDIA from '../../data/externalLinks';
 import getLanguage from '../../utils/getLanguage';
 import './Home.css';
+import ExternalButton from '../../components/ExternalButton/ExternalButton';
 
 const createHomeDescription = (hello, myName, professionTitle) => {
   const homeDescriptionContainer = document.createElement('div');
@@ -17,8 +17,8 @@ const createHomeDescription = (hello, myName, professionTitle) => {
     <h1>${myName} </h1>
     <p>${professionTitle}</p>
   `;
-  Object.keys(MEDIA).forEach((media) => {
-    socialButtonsContainer.append(SocialButton(media));
+  MEDIA.forEach((media) => {
+    socialButtonsContainer.append(ExternalButton(media));
   });
   homeDescriptionContainer.append(textContainer);
   homeDescriptionContainer.append(socialButtonsContainer);

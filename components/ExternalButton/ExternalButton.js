@@ -1,10 +1,9 @@
-import MEDIA from '../../data/mediaLinks';
 import Link from '../Link/Link';
-import './SocialButton.css';
+import './ExternalButton.css';
 
-const SocialButton = (media) => {
-  const { mediaName, url, text, icon, imageAlt } = MEDIA[media];
-  const linkElement = Link(url, text, `media-button ${mediaName}-button`);
+const ExternalButton = (array) => {
+  const { linkName, url, text, icon, imageAlt, type } = array;
+  const linkElement = Link(url, text, `${type}-button ${linkName}-button`);
   const buttonImage = document.createElement('img');
   linkElement.rel = 'noreferrer';
   linkElement.role = 'button';
@@ -14,4 +13,4 @@ const SocialButton = (media) => {
   return linkElement;
 };
 
-export default SocialButton;
+export default ExternalButton;

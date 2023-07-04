@@ -8,7 +8,7 @@ const PROJECTS = {
       url: 'URLTEST2en',
       codeUrl: 'CODEURLTEST2en',
       description: 'thos is description of test2en',
-      technologies: [''],
+      technologies: ['ViteJS'],
       defaultProject: true,
       showProject: true
     },
@@ -58,7 +58,7 @@ const PROJECTS = {
       url: 'URLTEST2es',
       codeUrl: 'CODEURLTEST2es',
       description: 'thos is description of test2es',
-      technologies: [''],
+      technologies: ['ViteJS'],
       defaultProject: true,
       showProject: true
     },

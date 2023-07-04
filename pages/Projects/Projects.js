@@ -1,11 +1,10 @@
 import CardContainer from '../../components/CardContainer/CardContainer';
+import ExternalButton from '../../components/ExternalButton/ExternalButton';
+import TechSub from '../../components/TechSub/TechSub';
 import { i18n } from '../../data/i18n';
 import getLanguage from '../../utils/getLanguage';
 import './Projects.css';
 
-const projectTechnologiesButtons = (technologies) => {
-  return false;
-};
 const projectLinkButtons = (codeUrl, projectUrl) => {
   return false;
 };
@@ -31,7 +30,7 @@ const projectToCard = (project) => {
     newCard.title = title;
     newCard.subTitle = url + codeUrl;
     newCard.description = description;
-    newCard.subDescription = technologies; //TODO: projectTechnologiesButtons()
+    newCard.subDescription = TechSub(technologies);
     newCard.classCard = 'project-card';
     newCard.cardId = title;
     newCard.defaultCard = defaultProject;
