@@ -35,7 +35,9 @@ export const i18n = {
     experienceTitle: `Where I've Worked`,
     experiencesList: EXPERIENCE.en,
     projectsTitle: 'Projects that I’ve Built',
-    projectsList: PROJECTS.en
+    projectsList: PROJECTS.en,
+    viewCode: 'View code',
+    visitSite: 'Visit Site'
   },
   es: {
     home: 'Inicio',
@@ -51,6 +53,8 @@ export const i18n = {
     experienceTitle: `Donde he trabajado`,
     experiencesList: EXPERIENCE.es,
     projectsTitle: 'Proyectos que he construido',
-    projectsList: PROJECTS.es
+    projectsList: PROJECTS.es,
+    viewCode: 'Ver el codigo',
+    visitSite: 'Visitar el sitio'
   }
 };

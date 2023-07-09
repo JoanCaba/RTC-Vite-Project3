@@ -18,6 +18,26 @@
   font-size: 28px;
   text-decoration: underline;
 }
+.sub-links {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.visit-anchor,
+.code-anchor {
+  padding: 5px 8px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.visit-anchor {
+  background-color: var(--mid-color);
+  color: var(--text-color);
+}
+.code-anchor {
+  background-color: var(--text-color);
+  color: var(--mid-color);
+}
 
 @media screen and (min-width: 405px) {
   #projects {

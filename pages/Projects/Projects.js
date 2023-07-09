@@ -1,5 +1,5 @@
 import CardContainer from '../../components/CardContainer/CardContainer';
-import ExternalButton from '../../components/ExternalButton/ExternalButton';
+import Link from '../../components/Link/Link';
 import TechSub from '../../components/TechSub/TechSub';
 import { i18n } from '../../data/i18n';
 import getLanguage from '../../utils/getLanguage';
@@ -9,7 +9,7 @@ const projectLinkButtons = (codeUrl, projectUrl) => {
   return false;
 };
 
-const projectToCard = (project) => {
+const projectToCard = (project, viewCode, visitSite) => {
   const newCard = {};
   const {
     title,
@@ -28,7 +28,13 @@ const projectToCard = (project) => {
     newCard.cardName = title;
     newCard.cardNameShort = shortName;
     newCard.title = title;
-    newCard.subTitle = url + codeUrl;
+    const projectUrlElement = Link(url, visitSite, 'visit-anchor');
+    const projectCodeUrlElement = Link(codeUrl, viewCode, 'code-anchor');
+    const subLinksContainer = document.createElement('div');
+    subLinksContainer.classList = 'sub-links';
+    subLinksContainer.append(projectUrlElement);
+    subLinksContainer.append(projectCodeUrlElement);
+    newCard.subTitle = subLinksContainer;
     newCard.description = description;
     newCard.subDescription = TechSub(technologies);
     newCard.classCard = 'project-card';
@@ -42,7 +48,7 @@ const projectToCard = (project) => {
 };
 
 const Projects = () => {
-  const { projectsList, projectsTitle } = i18n[getLanguage()];
+  const { projectsList, projectsTitle, viewCode, visitSite } = i18n[getLanguage()];
   const projectsContainer = document.createElement('section');
   const innerProjectsContainer = document.createElement('div');
   const projectsTitleElement = document.createElement('h2');
@@ -51,7 +57,7 @@ const Projects = () => {
   projectsContainer.classList.remove('fade-out');
   projectsContainer.classList.add('fade-in');
 
-  const projectsArray = projectsList.map((project) => projectToCard(project));
+  const projectsArray = projectsList.map((project) => projectToCard(project, viewCode, visitSite));
   const projectSection = CardContainer(projectsArray);
   innerProjectsContainer.append(projectsTitleElement);
   innerProjectsContainer.append(projectSection);
