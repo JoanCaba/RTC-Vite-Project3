@@ -19,7 +19,12 @@ const router = () => {
   const previousLink = document.querySelector(`.current-page-link`);
   const languageLink = document.querySelector('current-language-link');
   const nextLink = document.querySelector(`.${linkClass}`);
+  if (!component) {
+    console.log('test');
+    mainElement.appendChild(NotFound());
+  }
   if (previousLink === nextLink && languageLink === nextLink) return;
+  console.log(component);
   if (component) {
     updateNavLinksPage(linkClass);
     if (mainElement.children.length > 0) {
@@ -34,6 +39,7 @@ const router = () => {
     }
     mainElement.appendChild(component());
   } else {
+    console.log('test');
     mainElement.appendChild(NotFound());
   }
 };

@@ -5,10 +5,6 @@ import { i18n } from '../../data/i18n';
 import getLanguage from '../../utils/getLanguage';
 import './Projects.css';
 
-const projectLinkButtons = (codeUrl, projectUrl) => {
-  return false;
-};
-
 const projectToCard = (project, viewCode, visitSite) => {
   const newCard = {};
   const {
@@ -24,7 +20,6 @@ const projectToCard = (project, viewCode, visitSite) => {
     showProject
   } = project;
   if (showProject) {
-    // TODO: create links to code and url
     newCard.cardName = title;
     newCard.cardNameShort = shortName;
     newCard.title = title;

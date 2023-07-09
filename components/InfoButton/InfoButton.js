@@ -15,13 +15,6 @@ const InfoButton = (text, shortText, cardElement, groupClass, defaultCard) => {
       currentActiveCard.classList.remove('active-card');
       cardElement.classList.toggle('active-card');
     }
-
-    // if (!buttonElement.contains(event.target)) {
-    // groupCardElements.forEach((card) => {
-    //   card.classList.remove('active-card');
-    // });
-
-    // }
   });
   spanTextElement.innerText = text;
   spanShortTextElement.innerText = shortText;

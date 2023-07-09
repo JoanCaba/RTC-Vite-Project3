@@ -22,6 +22,7 @@ const PERSONAL_DATA = {
 
 export const i18n = {
   en: {
+    notFoundTitle: 'Page not found...',
     home: 'Home',
     experience: 'Experience',
     projects: 'Projects',
@@ -40,6 +41,7 @@ export const i18n = {
     visitSite: 'Visit Site'
   },
   es: {
+    notFoundTitle: 'Pagina no encontrada...',
     home: 'Inicio',
     experience: 'Experiencia',
     projects: 'Proyectos',
