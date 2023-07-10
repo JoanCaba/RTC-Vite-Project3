@@ -26,9 +26,11 @@ const createHomeDescription = (hello, myName, professionTitle) => {
 };
 
 const Home = () => {
-  const { hello, myName, professionTitle } = i18n[getLanguage()];
+  const { hello, myName, professionTitle, avatarImage, avatarImageAlt } = i18n[getLanguage()];
   const homeContainer = document.createElement('section');
-  const homeImageContainer = document.createElement('div');
+  const homeImageContainer = document.createElement('img');
+  homeImageContainer.src = avatarImage;
+  homeImageContainer.alt = avatarImageAlt;
   const homeDescriptionContainer = createHomeDescription(hello, myName, professionTitle);
   homeContainer.id = 'home';
   homeContainer.classList.remove('fade-out');

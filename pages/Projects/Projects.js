@@ -25,6 +25,8 @@ const projectToCard = (project, viewCode, visitSite) => {
     newCard.title = title;
     const projectUrlElement = Link(url, visitSite, 'visit-anchor');
     const projectCodeUrlElement = Link(codeUrl, viewCode, 'code-anchor');
+    projectUrlElement.rel = 'noreferrer';
+    projectCodeUrlElement.rel = 'noreferrer';
     const subLinksContainer = document.createElement('div');
     subLinksContainer.classList = 'sub-links';
     subLinksContainer.append(projectUrlElement);

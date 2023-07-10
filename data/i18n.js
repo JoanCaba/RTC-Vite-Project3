@@ -17,7 +17,7 @@ export const LOCALES = {
 };
 const PERSONAL_DATA = {
   name: 'Joan Cabañeros',
-  avatarImage: ''
+  avatarImage: '/Profile-photo.png'
 };
 
 export const i18n = {
