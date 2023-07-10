@@ -5,12 +5,14 @@
   border-radius: 0 0 10px 10px;
   display: none;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
   height: 100%;
   border: solid 1px var(--mid-color);
   border-left-width: 3px;
   border-top-width: 3px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .active-card {
   display: flex;
@@ -33,19 +35,51 @@
 .card-inner-container {
   display: flex;
   flex-direction: column;
+  font-weight: 600;
   gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
-@media screen and (min-width: 405px) {
+.card-inner-container > p {
+  line-height: 1.6;
+  width: 60%;
+}
+.card-inner-container > img {
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--text-color);
+  box-shadow: 0px 0px 17px 25px var(--shadow-color);
+  object-fit: contain;
+}
+.card-sub-description {
+  align-self: flex-end;
+}
+@media screen and (min-width: 640px) {
   .card-container {
-    width: 50svw;
+    width: 60svw;
     max-width: 750px;
     border-radius: 0 10px 10px 0;
     border-left-width: 3px;
     border-top-width: 3px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
   .card-inner-container {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    justify-content: space-evenly;
+  }
+  .card-inner-container > img {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+    box-shadow: 0px 0px 17px 25px var(--shadow-color);
+    object-fit: contain;
   }
 }

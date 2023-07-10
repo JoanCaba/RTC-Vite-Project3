@@ -1,4 +1,5 @@
 import CardContainer from '../../components/CardContainer/CardContainer';
+import TechSub from '../../components/TechSub/TechSub';
 import { i18n } from '../../data/i18n';
 import getLanguage from '../../utils/getLanguage';
 import './Experience.css';
@@ -25,7 +26,7 @@ const experienceToCard = (experience) => {
     newCard.title = title;
     newCard.subTitle = subTitle;
     newCard.description = description;
-    newCard.subDescription = technologies;
+    newCard.subDescription = TechSub(technologies);
     newCard.classCard = 'experience-card';
     newCard.cardId = company;
     newCard.defaultCard = defaultCard;
@@ -45,10 +46,7 @@ const Experience = () => {
   experienceContainer.id = 'experience';
   experienceContainer.classList.remove('fade-out');
   experienceContainer.classList.add('fade-in');
-  // TODO: Refactor as array
-  const experiences = Object.keys(experiencesList);
-  const cardsToDisplay = experiences.filter((exp) => experiencesList[exp].showCard === true);
-  const cardsArray = cardsToDisplay.map((card) => experienceToCard(experiencesList[card]));
+  const cardsArray = experiencesList.map((experience) => experienceToCard(experience));
   const experienceSection = CardContainer(cardsArray);
   innerExperienceContainer.append(experienceTitleElement);
   innerExperienceContainer.append(experienceSection);
