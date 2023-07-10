@@ -31,5 +31,6 @@
   }
   .cards-container {
     padding: 5px 5px 5px 0;
+    height: 70svh;
   }
 }
