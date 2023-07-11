@@ -78,7 +78,7 @@ const EXPERIENCE = {
       companyShort: 'AB',
       companyIcon: '/Companies/ABC-Logo.svg',
       companyIconAlt: 'ABC Corp logo',
-      title: 'Ingeniero de Softare',
+      title: 'Ingeniero de Software',
       startDate: '2019-01-01',
       endDate: '2022-06-30',
       description:
@@ -96,7 +96,7 @@ const EXPERIENCE = {
       startDate: '2017-03-15',
       endDate: '2018-12-31',
       description:
-        'Analizé los sistemas de TI existentes y propuso mejoras para optimizar el rendimiento. Realicé pruebas del sistema, identifiqué y resolví errores, y brindé soporte técnico a los usuarios finales.',
+        'Analicé los sistemas de TI existentes y propuso mejoras para optimizar el rendimiento. Realicé pruebas del sistema, identifiqué y resolví errores, y brindé soporte técnico a los usuarios finales.',
       technologies: ['Python', 'SQL', 'Unix', 'Oracle'],
       showCard: true,
       defaultCard: false
